@@ -5,6 +5,12 @@ sources:
     description: demo dbt LW
     tables:
       - name: raw_gz_product
+
       - name: raw_gz_sales
+        columns:
+        - name: orders_id
+          tests:
+            - primary_key  # name of my custom generic test
+
       - name: raw_gz_ship
 
