@@ -1,3 +1,5 @@
+{{config( materialized = 'Table')}}
+
 SELECT *
 FROM 
 {{ref('stg_gz_raw_data__raw_gz_product')}}
