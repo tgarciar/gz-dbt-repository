@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: gz_raw_data
+    description: demo dbt LW
+    tables:
+      - name: raw_gz_product
+
+      - name: raw_gz_sales
+
+      - name: raw_gz_ship
+
+models:
+  - name: stg_gz_raw_data__raw_gz_product
+    description: product gz data
+  
+  - name: stg_gz_raw_data__raw_gz_sales
+    description: sales gz data 
+  
+  - name: stg_gz_raw_data__raw_gz_ship
+    description: shipping gz data 
